@@ -1,0 +1,20 @@
+int tempo=1;
+void setup()
+{
+  //Define a porta do led como saida
+  pinMode(11, OUTPUT);
+  pinMode(10, OUTPUT);
+  pinMode(9, OUTPUT);
+  pinMode(6, OUTPUT);
+}
+void loop() {
+
+  for(int pino=11;pino>=6;pino--){
+  for (int i = 0; i <= 255; i++){
+  analogWrite(pino, i);
+  delay(tempo);}
+  for (int i = 0; i >= 255; i--){
+  analogWrite(pino, i);
+  delay(tempo);}
+  }
+}
