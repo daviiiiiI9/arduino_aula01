@@ -1,0 +1,24 @@
+int ledamarelo=12;
+int pushamarelo=8;
+int pushred=11;
+int ledred =5;
+void setup()
+{
+  pinMode (ledamarelo,OUTPUT);
+  pinMode(pushamarelo,INPUT);
+  Serial.begin(9600);
+  pinMode (ledred,OUTPUT);
+  pinMode(pushred,INPUT);
+  Serial.begin(9600);
+  
+}
+void loop() {
+  
+if (digitalRead(pushamarelo)==HIGH)
+  {digitalWrite(ledamarelo,HIGH);
+ }else{ digitalWrite(ledamarelo, LOW);}
+ 
+ if (digitalRead(pushred)==HIGH)
+  {digitalWrite(ledred,HIGH);
+ }else{ digitalWrite(ledred, LOW);}
+}
