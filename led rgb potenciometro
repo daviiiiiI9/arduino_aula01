@@ -1,0 +1,72 @@
+int tempo=1;
+int ledR1=11;
+int ledG1=10;
+int ledB1=9;
+int ledR2=6;
+int ledG2=5;
+int ledB2=3;
+
+void setup() {
+  pinMode(ledR1,OUTPUT);
+  pinMode(ledG1,OUTPUT);
+  pinMode(ledB1,OUTPUT);
+  pinMode(ledR2,OUTPUT);
+  pinMode(ledG2,OUTPUT);
+  pinMode(ledB2,OUTPUT);
+
+
+}
+
+void loop() {
+ int ValorPot=analogRead (A0);
+   digitalWrite (ledR1, LOW);
+  digitalWrite (ledG1, LOW);
+  digitalWrite (ledB1, LOW);
+   digitalWrite (ledR2, LOW);
+  digitalWrite (ledG2, LOW);
+  digitalWrite (ledB2, LOW);
+  
+   if (ValorPot > 0 && ValorPot <= 333) {
+    ("LED Amarelo......");
+    digitalWrite (ledB1, HIGH);}
+    
+     if (ValorPot > 0 && ValorPot <= 333) {
+    ("LED Amarelo......");
+    digitalWrite (ledG2, HIGH);}
+    
+
+ if (ValorPot > 334 && ValorPot <= 777) {
+    ("LED Amarelo......");
+    digitalWrite (ledR1, HIGH);}
+    
+     if (ValorPot > 334 && ValorPot <= 777) {
+    ("LED Amarelo......");
+    digitalWrite (ledB2, HIGH);}
+    
+if (ValorPot > 777 && ValorPot <= 889) {
+    ("LED Amarelo......");
+    digitalWrite (ledG1, HIGH);}
+    
+     if (ValorPot > 777 && ValorPot <= 888) {
+    ("LED Amarelo......");
+    digitalWrite (ledR2, HIGH);}
+
+    if (ValorPot > 889 && ValorPot <= 1024) {
+    ("LED Amarelo......");
+    digitalWrite (ledR2, HIGH);}
+
+     if (ValorPot > 889 && ValorPot <= 1024) {
+    ("LED Amarelo......");
+    digitalWrite (ledG1, HIGH);}
+
+     if (ValorPot > 889 && ValorPot <= 1024) {
+    ("LED Amarelo......");
+    digitalWrite (ledR1, HIGH);}
+
+     if (ValorPot > 889 && ValorPot <= 1024) {
+    ("LED Amarelo......");
+    digitalWrite (ledB2, HIGH);}
+    
+
+
+}
