@@ -28,44 +28,44 @@ void loop() {
   
    if (ValorPot > 0 && ValorPot <= 333) {
     ("LED Amarelo......");
-    digitalWrite (ledB1, HIGH);}
+    analogWrite (ledB1, 255);}
     
      if (ValorPot > 0 && ValorPot <= 333) {
     ("LED Amarelo......");
-    digitalWrite (ledG2, HIGH);}
+    analogWrite (ledG2, 255);}
     
 
  if (ValorPot > 334 && ValorPot <= 777) {
     ("LED Amarelo......");
-    digitalWrite (ledR1, HIGH);}
+    digitalWrite (ledR1, 255);}
     
      if (ValorPot > 334 && ValorPot <= 777) {
     ("LED Amarelo......");
-    digitalWrite (ledB2, HIGH);}
+    analogWrite (ledB2, 255);}
     
 if (ValorPot > 777 && ValorPot <= 889) {
     ("LED Amarelo......");
-    digitalWrite (ledG1, HIGH);}
+    analogWrite (ledG1, 255);}
     
      if (ValorPot > 777 && ValorPot <= 888) {
     ("LED Amarelo......");
-    digitalWrite (ledR2, HIGH);}
+    analogWrite (ledR2, 255);}
 
     if (ValorPot > 889 && ValorPot <= 1024) {
     ("LED Amarelo......");
-    digitalWrite (ledR2, HIGH);}
+    analogWrite (ledR2, 255);}
 
      if (ValorPot > 889 && ValorPot <= 1024) {
     ("LED Amarelo......");
-    digitalWrite (ledG1, HIGH);}
+    analogWrite (ledG1, 255);}
 
      if (ValorPot > 889 && ValorPot <= 1024) {
     ("LED Amarelo......");
-    digitalWrite (ledR1, HIGH);}
+    analogWrite (ledR1, 255);}
 
      if (ValorPot > 889 && ValorPot <= 1024) {
     ("LED Amarelo......");
-    digitalWrite (ledB2, HIGH);}
+    analogWrite (ledB2, 255);}
     
 
 
